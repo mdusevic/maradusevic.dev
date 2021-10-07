@@ -27,6 +27,8 @@ h2 {
     margin-top: 400px;
     margin-left: 50px;
     padding: 70px 0;
+    position: absolute;
+    z-index: 100;
 }
 .shape {
     margin-left: -10px;

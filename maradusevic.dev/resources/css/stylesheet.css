@@ -3,44 +3,57 @@
 canvas {
     position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
 }
 body {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    margin-left: 50px;
     background-color:#19252b;
 }
 h1 {
     margin: 0;
-    display: block;
-    font-size: 80px;
+    font-size: clamp(50px, 6vw, 110px);
 }
 h2 {
-    margin: 0;
-    display: block;
-    font-size: 40px;
+    margin-top: 14px;
+    font-size: clamp(20px, 3vw, 50px);
+}
+h3 {
+    font-size: clamp(30px, 2vw, 40px);
 }
 .Title {
+    display: inline-block;
     text-align: left;
-    block-align: center;
-    margin-top: 400px;
-    margin-left: 50px;
-    padding: 70px 0;
+    margin-top: 500px;
+    margin-bottom: 300px;
+    margin-left: 80px;
+    padding: 10px 0;
     position: absolute;
     z-index: 100;
 }
+.About {
+    background-color: #33374b;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1180px;
+    padding: 70px 80px;
+    position: relative;
+    width: 90%;
+    z-index: 100;
+}
 .shape {
-    margin-left: -10px;
-    margin-top: 10px;
+    margin-left: -8px;
+    margin-top: -15px;
     border-radius: 25px;
     position: absolute;
     height: 10px;
-    width: 750px;
-    background-image: linear-gradient(to left, lightseagreen, seagreen);
+    width: clamp(150px, 75vw, 1400px);
+    background-image: linear-gradient(to left, #0b6b91, #154d6e);
 }
 p {
-    
+    font-size: clamp(18px, 2vw, 20px);
 }
 ul {
     

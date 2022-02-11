@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects - 2D Character Creator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Back To Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Constellations.html">Constellations</a></li>
+							<li><a href="CarnivalCarnage.html">Carnival Carnage VR</a></li>
+							<li><a href="2DProceduralDungeon.html">2D Procedural Dungeon</a></li>
+							<li><a href="2DCharacterCreator.html">2D Character Creator</a></li>
+							<li><a href="DialogueTree.html">Dialogue Tree</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>2D Character Creator</h1>
+							<span class="image main"><img src="images/Projects/2DCharacterCreator1.gif" alt="" /></span>
+							<p>
+								In my spare time I've been slowly working on a 2D management game and to start I wanted to work on character creation.
+								I figured it would fun to learn and allowed me to play around in the engine to better improve my programming ability especially with UI and sprites.
+								<b>This is still a work in progress.</b>
+							</p>
+							<hr/>
+							<h2>Features</h2>
+							<p>
+								With the character creator, I first found sprites to colour all white. This allowed me to avoid creating tons of sprites and give the player more
+								freedom when creating their characters. To create these colour sliders, I originally was going to overlay a texture online over the slider to create the
+								slider's visual look. However, I challenged myself to instead create textures at runtime that then can be adjusted based on the current colour value.
+								Although I had never played around with script made textures it definetly was daunting but so rewarding to see the final result.
+								<br>
+								<br>
+								The menu also includes a cyclable list of items that the player can dress in which all can be adjusted to any colour. Finally, I also implemented a 
+								rotate button to turn the player's character around so they can see how they look. Here I had to store each direction and on each change, pull the same
+								sprites out that have that direction written in their name and apply them. This would also need to update all the cyclable groups. 
+								Although a tedious task, I thought when character movement would be implemented this small feature be really helpful in changing the player's sprites. 
+							</p>
+							<span class="image main"><img src="images/Projects/2DCharacterCreator2.gif" alt="" /></span>
+							<ul class="actions fit" style="margin-top: 2em">
+								<li><a href="https://github.com/mdusevic/ManagementGame" class="button primary">Project Files</a></li>
+							</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact Me</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/maradusevic/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/mdusevic" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="tel:+61413810092" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="mailto:dusevicmara@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Mara Dusevic. All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

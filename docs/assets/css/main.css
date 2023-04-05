@@ -2575,7 +2575,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		postiion: relative;
-		margin: -2.5em 0 0 -2.5em;
+		margin: -2.5em -5em 0 -2.5em;
 	}
 
 		.tiles article {
@@ -2596,13 +2596,17 @@ input, select, textarea {
 				position: relative;
 				display: block;
 				width: 100%;
+				height: 100%;
 				border-radius: 4px;
 				overflow: hidden;
 			}
 
 				.tiles article > .image img {
 					display: block;
-					width: 100%;
+					width: 500px;
+					height: 380px;
+					object-fit: cover;
+					position: center;
 				}
 
 				.tiles article > .image:before {
@@ -2620,7 +2624,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 0.35;
 				}
 
 				.tiles article > .image:after {
@@ -2640,10 +2644,10 @@ input, select, textarea {
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
-					opacity: 0.25;
+					opacity: 0;
 					z-index: 2;
 				}
-
+			
 			.tiles article > a {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2670,13 +2674,14 @@ input, select, textarea {
 				left: 0;
 				width: 100%;
 				height: 100%;
-				padding: 1em;
+				padding: 2em;
 				border-radius: 4px;
 				border-bottom: 0;
 				color: #ffffff;
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
+				font-size: 20pt;
 			}
 
 				.tiles article > a > :last-child {
@@ -2689,8 +2694,17 @@ input, select, textarea {
 
 				.tiles article > a h2 {
 					margin: 0;
+					letter-spacing: 0.15em;
+					display: inline-flex;
 				}
-
+				
+				.tiles article > a div h2 {
+					/*background-color: rgba(0, 0, 0, 0.25);*/
+					padding: 0.4em;
+					text-align: center;
+					border-radius: 8px;
+				}
+				
 				.tiles article > a .content {
 					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2712,23 +2726,27 @@ input, select, textarea {
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #35237a;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #655740;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #725cab;
+				background-color: #493035;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #7861b4;
+				background-color: #2b3f28;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #42a9af;
+			}
+			
+			.tiles article.style7 > .image:before {
+				background-color: #56344f;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
